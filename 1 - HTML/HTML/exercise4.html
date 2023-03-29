@@ -14,61 +14,35 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title> This is a basic example of HTML Table</title>
-  <style>
-    td,
-    th {
-      border-left: solid black 1px;
-    }
-
-    .colgroup {
-      border-right: solid black 1px;
-    }
-
-    .rowgroup,
-    .colgroup {
-      text-align: center;
-    }
-  </style>
 </head>
 
 <body>
-  <header>
-    <h1>Table</h1>
-  </header>
-  <main>
-    <table>
-      <thead>
-        <tr>
-          <th colspan="1"> Name<br></th>
-          <th colspan="1"> Age </th>
-          <th colspan="1" class="colgroup"> Occupation </th>
-        </tr>
-        <tr>
-          <th rowspan="1">------------</th>
-          <th rowspan="1">-------</th>
-          <th rowspan="1" class="colgroup">------------------</th>
-        </tr>
-      </thead>
-      <tbody>
-
-        <tr>
-          <td class="rowgroup"> John </td>
-          <td class="rowgroup"> 25 </td>
-          <td class="colgroup"> Developer </td>
-        </tr>
-        <tr>
-          <td class="rowgroup"> Sarah </td>
-          <td class="rowgroup"> 30 </td>
-          <td class="colgroup"> Designer </td>
-        </tr>
-        <tr>
-          <td class="rowgroup"> Jack </td>
-          <td class="rowgroup"> 35 </td>
-          <td class="colgroup"> Manager </td>
-        </tr>
-      </tbody>
-    </table>
-  </main>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Occupation</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John</td>
+        <td>25</td>
+        <td>Developer</td>
+      </tr>
+      <tr>
+        <td>Sarah</td>
+        <td>30</td>
+        <td>Designer</td>
+      </tr>
+      <tr>
+        <td>Jack</td>
+        <td>35</td>
+        <td>Manager</td>
+      </tr>
+    </tbody>
+  </table>
 </body>
 
 </html>
