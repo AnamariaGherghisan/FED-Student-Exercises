@@ -13,12 +13,16 @@ h1 {
   font-size: larger;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
-
+p {
+  font-size: smaller;
+  font-style: italic;
+  font-weight: bold;
+}
 /*Exercise 2*/
 a:hover {
   background-color: red;
+  color: black;
 }
-
 .wow:hover {
   background-color: red;
   color: hotpink;
