@@ -4,7 +4,7 @@
 
 Create a modal window using CSS. Add a button to the page that triggers the modal.
 
->💡 Heads up: The button doesn't have to be functional yet as we will make it functional with JS in the coming weeks
+> 💡 Heads up: The button doesn't have to be functional yet as we will make it functional with JS in the coming weeks
 
 ## Exercise 2
 
