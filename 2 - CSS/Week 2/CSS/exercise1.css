@@ -1,24 +1,18 @@
 /* The Modal (background) */
 /*Variables*/
 .modal {
---gap: 15px;
---modal-background-color: #fff;
---modal-border-color: #781616;
---modal-border-radius: 4px;
-
+  display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  top: 0;
   left: 0;
+  top: 0;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0, 0, 0); /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.5); /* Black w/ opacity */
-  font-family: sans-serif;
-  box-shadow: none;
-  border-color: var(--modal-border-color);
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
   box-sizing: border-box;
+  box-shadow: none;
 }
 
 .modalInner {
@@ -28,7 +22,6 @@
   max-width: 800px;
   overflow: hidden;
   border-radius: var(--modal-border-radius);
-  
 }
 
 .modalTop {
@@ -39,7 +32,7 @@
 
 .modalTitle {
   flex-grow: 1;
-  padding:0;
+  padding: 0;
   font-size: 20px;
 }
 
@@ -50,7 +43,6 @@
   padding: 20px;
   border: 1px solid #888;
   width: 80%; /* Could be more or less, depending on screen size */
-  line-height: 1.5;
 }
 
 .modalBottom {
@@ -69,7 +61,7 @@
   color: #ffffff;
   cursor: pointer;
   font-size: 18px;
-  float:right;
+  float: right;
   font-weight: bold;
 }
 
@@ -79,18 +71,13 @@
   text-decoration: none;
   cursor: pointer;
 }
-.modalClose {
-  display: none;
-position: fixed;
-  justify-content: center;
-  cursor: pointer;
-  position: fixed;
-  padding: var(--gap);
-  font-size: 20px;
-  outline: none;
-  border-radius: 4px;
-  border: none;
-  opacity: 0.5;
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
 }
 
 .materialIcons {
@@ -109,11 +96,18 @@ position: fixed;
   -webkit-font-smoothing: antialiased;
 }
 
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 /* fallback */
 @font-face {
   font-family: "Material Icons";
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/materialicons/v140/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2)
-  format("woff2");
+    format("woff2");
 }
