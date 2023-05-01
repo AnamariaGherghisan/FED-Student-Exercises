@@ -1,0 +1,46 @@
+/* This code targets the <nav> element and sets the background color to dark gray and hides any overflow. */
+nav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* This code targets the unordered list inside the <nav> element and sets the list-style to none, 
+margin and padding to 0 and sets the background color to dark gray. It also uses flexbox to position the list items evenly 
+between the start and end of the container and centers the items vertically. */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* This code targets the list items inside the <nav> element and sets them 
+to display as inline-blocks and adds a right margin of 10px. */
+nav li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* This code targets the anchor tag inside the list items and sets it to display as a block element, aligns the text in the center,
+ sets the color to white, and adds padding. It also removes any text decoration. */
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* This code targets the anchor tag inside the list items and sets the background color to dark gray when hovered. */
+nav li a:hover {
+  background-color: #111;
+}
+
+/* This code targets the anchor tag inside the list item with the class "active" and sets the background color to green. */
+nav li a.active {
+  background-color: #4caf50;
+}

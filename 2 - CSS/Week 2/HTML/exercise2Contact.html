@@ -6,38 +6,44 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Page</title>
+  <!-- link to CSS file for styling -->
   <link rel="stylesheet" href="/2 - CSS/Week 2/CSS/exercise2Contact.css">
 </head>
 
 <body>
-  <div class="container">
-    <div style="text-align:center">
-      <h2>Contact Us</h2>
-      <p>Swing by for a chat or a cup of coffee, or leave us a message:</p>
-    </div>
-    <div class="row">
-      <div class="column">
-        <img src="/2 - CSS/Week 2/assets/map.jpg" alt="map business location overview" style="width:100%">
-      </div>
-      <div class="column">
-        <form>
-          <label for="fname">First Name</label>
-          <input type="text" id="fname" name="firstname" placeholder="Your name..">
-          <label for="lname">Last Name</label>
-          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-          <label for="country">Country</label>
-          <select id="country" name="country">
-            <option value="Uk">Uk</option>
-            <option value="Europe">Europe</option>
-            <option value="Usa">USA</option>
-          </select>
-          <label for="subject">Message</label>
-          <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
-          <input type="submit" value="Submit">
-        </form>
-      </div>
-    </div>
-  </div>
+
+  <!-- header with page title and navigation -->
+  <header>
+    <h1>Contact Us</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="exercise2About.html">About Us</a></li>
+        <li><a href="exercise2Contact.html" class= "active">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- main content area with contact form -->
+  <main>
+
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+
+  </main>
+
+  <!-- footer with copyright information -->
+  <footer>
+    <p>&copy 2023 My Fake Company, Inc.</p>
+  </footer>
+
 </body>
 
 </html>

@@ -1,58 +1,91 @@
+/*The HTML code creates a basic Contact Us page with a header, navigation, main content area with a form, and footer. 
+The form includes input fields for name, email, and message, and a submit button. The CSS code styles the page with 
+a dark background color for the header and navigation, and light background color for the main content area. 
+It uses flexbox to arrange the navigation and form elements, and sets styles for fonts, colors, padding, and margins 
+to make the page visually appealing and user-friendly.*/
+
+/* set default styles for all elements */
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-/* Style inputs */
-input[type="text"],
-select,
-textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
-
-input[type="submit"] {
-  background-color: #04aa6d;
+/* style the header */
+header {
+  background-color: #333;
   color: white;
-  padding: 12px 20px;
+  padding: 1rem;
+}
+
+header h1 {
+  margin: 0;
+}
+
+/* style the navigation */
+nav {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav li {
+  margin-left: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* style the main content area */
+main {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  border-radius: 0.25rem;
+  border: 1px solid #ccc;
+}
+
+button[type="submit"] {
+  padding: 0.5rem;
+  margin-top: 1rem;
+  background-color: #333;
+  color: white;
   border: none;
+  border-radius: 0.25rem;
   cursor: pointer;
 }
 
-input[type="submit"]:hover {
-  background-color: #45a049;
+button[type="submit"]:hover {
+  background-color: #111;
 }
 
-/* Style the container/contact section */
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 10px;
-}
-
-/* Create two columns that float next to eachother */
-.column {
-  float: left;
-  width: 50%;
-  margin-top: 6px;
-  padding: 20px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column,
-  input[type="submit"] {
-    width: 100%;
-    margin-top: 0;
-  }
+/* style the active link on the navbar */
+nav a.active {
+  background-color: #4caf50;
 }
