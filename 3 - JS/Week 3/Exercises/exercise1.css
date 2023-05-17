@@ -1,0 +1,47 @@
+/* Explanation:
+
+The CSS code defines the styles for the web app.
+The body font is set to Arial and sans-serif as a fallback.
+The .container class styles the container div, setting a fixed width, centering it with margin: 0 auto, and adding padding and a border.
+The form styles include margin-bottom: 10px to create some space below the form.
+The label styles include display: block to make it a block-level element and margin-bottom: 10px to create some space below it.
+The input field styles include width: 100% to make it fill the width of its container, padding, and some margin at the bottom.
+The submit button styles include display: block to make it a block-level element and margin-top: 10px to create some space above it.
+The result <div> styles include font-weight: bold to make the text bold and margin-top: 10px to create some space above it.*/
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form {
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+button[type="submit"] {
+  display: block;
+  margin-top: 10px;
+}
+
+#result {
+  font-weight: bold;
+  margin-top: 10px;
+}

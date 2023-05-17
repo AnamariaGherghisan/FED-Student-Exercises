@@ -1,0 +1,38 @@
+<!--Explanation:
+
+The HTML structure is created with a <div> container, a heading, a form, an input field for numbers, 
+  a submit button, and a <div> to display the result.
+The title of the web app is set to "Sum of Even Numbers".
+The external CSS file (styles.css) is linked to the HTML file using the <link>
+ tag to apply the specified styles.
+The JavaScript file (script.js) is included in the HTML using the <script> tag to enable 
+  the functionality of calculating the sum of even numbers.
+The form element has an id of "even-sum-form" to target it in the JavaScript code.
+The input field has an id of "numbers" to target it in the JavaScript code.
+The result <div> has an id of "result" to display the result.-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sum of Even Numbers</title>
+  <link rel="stylesheet" type="text/css" href="exercise2.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Sum of Even Numbers</h1>
+    <form id="even-sum-form">
+      <label for="numbers">Enter numbers (comma-separated):</label>
+      <input type="text" id="numbers" placeholder="Enter numbers">
+      <button type="submit">Calculate</button>
+    </form>
+    <div id="result"></div>
+    <script src="exercise2.js"></script>
+  </div>
+</body>
+
+</html>

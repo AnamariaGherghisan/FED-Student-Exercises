@@ -1,0 +1,37 @@
+<!--Explanation:
+
+The HTML structure is created with a <div> container, a heading, a form, an input field for the word, 
+  a submit button, and a <div> to display the result.
+The title of the web app is set to "Palindrome Checker".
+The external CSS file (exercise1.css) is linked to the HTML file using the <link> tag to apply the specified styles.
+The JavaScript file (exercise1.js) is included in the HTML using the <script> tag to enable the 
+  functionality of checking if a word is a palindrome.
+The form element has an id of "palindrome-form" to target it in the JavaScript code.
+The input field has an id of "word" to target it in the JavaScript code.
+The result <div> has an id of "result" to display the result.-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Palindrome Checker</title>
+  <link rel="stylesheet" type="text/css" href="exercise1.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Palindrome Checker</h1>
+    <form id="palindrome-form">
+      <label for="word">Enter a word:</label>
+      <input type="text" id="word" placeholder="Enter a word">
+      <button type="submit">Check</button>
+    </form>
+    <div id="result"></div>
+    <script src="exercise1.js"></script>
+  </div>
+</body>
+
+</html>

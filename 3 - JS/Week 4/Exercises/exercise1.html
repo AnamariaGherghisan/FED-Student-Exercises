@@ -1,0 +1,32 @@
+<!--Explanation:
+
+The HTML structure is created with a <div> container, a heading, a paragraph, an input field for password display, and a button.
+The title of the web app is set to "Random Password Generator".
+The external CSS file (exercise1.css) is linked to the HTML file using the <link> tag to apply the specified styles.
+The JavaScript file (exercise1.js) is included in the HTML using the <script> tag to enable the functionality of generating the
+   random password.
+The button's onclick attribute is set to the function generatePassword() to generate a random password when the button is clicked.
+The password input field has an id of "password" to target it in the JavaScript code.-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Password Generator</title>
+  <link rel="stylesheet" type="text/css" href="exercise1.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Random Password Generator</h1>
+    <p>Click the button below to generate a random password:</p>
+    <input type="text" id="password">
+    <button onclick="generatePassword()">Generate Password</button>
+    <script src="exercise1.js"></script>
+  </div>
+</body>
+
+</html>

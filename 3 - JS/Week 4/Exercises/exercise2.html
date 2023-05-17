@@ -1,0 +1,40 @@
+<!--Explanation:
+
+The HTML structure is created with a <div> container, a heading, a label, an input field for temperature, a dropdown for 
+  selecting the unit, a button to trigger the conversion, and a <div> to display the result.
+The title of the web app is set to "Temperature Converter".
+The external CSS file (exercise2.css) is linked to the HTML file using the <link> tag to apply the specified styles.
+The JavaScript file (exercise2.js) is included in the HTML using the <script> tag to enable the functionality 
+  of converting the temperature.
+The onclick attribute of the button is set to the function convertTemperature() to convert the temperature when the button is clicked.
+The input field has an id of "input" to target it in the JavaScript code.
+The select field has an id of "unit" to target it in the JavaScript code.
+The result <div> has an id of "result" to display the converted temperature.-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temperature Converter</title>
+  <link rel="stylesheet" type="text/css" href="exercise2.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Temperature Converter</h1>
+    <label for="input">Enter temperature:</label>
+    <input type="number" id="input" placeholder="Enter temperature" min="-273.15" step="0.01">
+    <select id="unit">
+      <option value="celsius">Celsius</option>
+      <option value="fahrenheit">Fahrenheit</option>
+    </select>
+    <button onclick="convertTemperature()">Convert</button>
+    <div id="result"></div>
+    <script src="exercise2.js"></script>
+  </div>
+</body>
+
+</html>

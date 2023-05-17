@@ -1,0 +1,25 @@
+/* Explanation:
+
+The CSS code defines the styles for the web app.
+The body font is set to Arial and sans-serif as a fallback.
+The .container class styles the container div, setting a fixed width, centering it with margin: 0 auto, 
+and adding padding and a border.
+The button styles include display: block to make it a block-level element and margin-top: 10px 
+to create some space between the button and other elements.*/
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  display: block;
+  margin-top: 10px;
+}

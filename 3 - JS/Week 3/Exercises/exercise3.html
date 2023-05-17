@@ -1,0 +1,37 @@
+<!--Explanation:
+
+The HTML structure is created with a <div> container, a heading, a form, an input field for the string, 
+  a submit button, and a <div> to display the result.
+The title of the web app is set to "Title Case Converter".
+The external CSS file (styles.css) is linked to the HTML file using the <link> tag to apply the specified styles.
+The JavaScript file (script.js) is included in the HTML using the <script> tag to enable the 
+  functionality of converting the string to title case.
+The form element has an id of "title-case-form" to target it in the JavaScript code.
+The input field has an id of "input" to target it in the JavaScript code.
+The result <div> has an id of "result" to display the converted string.-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Title Case Converter</title>
+  <link rel="stylesheet" type="text/css" href="exercise3.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Title Case Converter</h1>
+    <form id="title-case-form">
+      <label for="input">Enter a string:</label>
+      <input type="text" id="input" placeholder="Enter a string">
+      <button type="submit">Convert</button>
+    </form>
+    <div id="result"></div>
+    <script src="exercise3.js"></script>
+  </div>
+</body>
+
+</html>

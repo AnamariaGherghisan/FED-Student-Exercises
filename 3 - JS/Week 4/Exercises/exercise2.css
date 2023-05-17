@@ -1,0 +1,47 @@
+/*Explanation:
+
+The CSS code defines the styles for the web app.
+The body font is set to Arial and sans-serif as a fallback.
+The .container class styles the container div, setting a fixed width, centering it with margin: 0 auto, and adding padding and a border.
+The label styles include display: block to make it a block-level element and margin-bottom: 10px to create some space below it.
+The input field styles include width: 100% to make it fill the width of its container, padding, and some margin at the bottom.
+The select field styles include width: 100% to make it fill the width of its container, padding, and some margin at the bottom.*/
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+select {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+button {
+  display: block;
+  margin-top: 10px;
+}
+
+#result {
+  font-weight: bold;
+  margin-top: 10px;
+}
